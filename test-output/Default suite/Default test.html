@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 11 20:56:20 SAST 2023</td>
+<td>Started on:</td><td>Mon Sep 11 22:30:43 SAST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (89 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3785 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.Base.testProjectWebSiteShouldHaveCorrectTitle()'><b>testProjectWebSiteShouldHaveCorrectTitle</b><br>Test class: test.Base</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;test.Base.browser&quot; is null
-	at test.Base.testProjectWebSiteShouldHaveCorrectTitle(Base.java:45)
+<td title='test.FacebookDemo.pageTitleValidation()'><b>pageTitleValidation</b><br>Test class: test.FacebookDemo<br/>
+<a href="#Output-2017530134" onClick='toggleBox("Output-2017530134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2017530134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2017530134">
+Expected Result = Facebook – log in or sign up<br/>
+Actual Result = Facebook<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Mistmatch in the page title. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at test.FacebookDemo.pageTitleValidation(FacebookDemo.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,9 +118,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace81412691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace81412691'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;test.Base.browser&quot; is null
-	at test.Base.testProjectWebSiteShouldHaveCorrectTitle(Base.java:45)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2017530134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017530134'><pre>java.lang.AssertionError: Mistmatch in the page title. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at test.FacebookDemo.pageTitleValidation(FacebookDemo.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,7 +154,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.Base@515c6049</td></tr>
+<td>test.FacebookDemo@4c12331b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.FacebookDemo.loginTest()'><b>loginTest</b><br>Test class: test.FacebookDemo</td>
+<td></td>
+<td>3</td>
+<td>test.FacebookDemo@4c12331b</td></tr>
 </table><p>
 </body>
 </html>
