@@ -7,8 +7,9 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 
@@ -19,9 +20,9 @@ public class FacebookDemo {
 
 	@BeforeSuite
 	public void beforeSuite() {
-		ChromeOptions options = new ChromeOptions();
+		EdgeOptions options = new EdgeOptions();
 		options.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(options);
+		driver = new EdgeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("http://www.facebook.com");
 		System.out.println(driver.getTitle());
