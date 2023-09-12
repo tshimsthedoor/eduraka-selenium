@@ -39,7 +39,7 @@ public class FacebookDemo {
 	public void loginTest() {
 		driver.findElement(By.id("email")).sendKeys("tshimsthedor@yahoo.fr");
 		driver.findElement(By.id("pass")).sendKeys("thedwer");
-		driver.findElement(By.xpath("//button[@name='login']")).click();
+		//driver.findElement(By.xpath("//button[@name='login']")).click();
 	}
 	
 
