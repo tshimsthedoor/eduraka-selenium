@@ -7,7 +7,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 
@@ -17,7 +18,7 @@ public class FacebookDemo {
 
 	@BeforeSuite
 	public void beforeSuite() {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://www.facebook.com");
 		System.out.println(driver.getTitle());
