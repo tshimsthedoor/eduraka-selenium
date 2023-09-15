@@ -8,20 +8,20 @@
       <![CDATA[Actual Result = Facebook – log in or sign up]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-09-12T12:16:02 SAST" name="Regression Suite" finished-at="2023-09-12T12:16:02 SAST" duration-ms="376">
+  <suite started-at="2023-09-15T20:56:41 SAST" name="Default suite" finished-at="2023-09-15T20:56:41 SAST" duration-ms="283">
     <groups>
     </groups>
-    <test started-at="2023-09-12T12:16:02 SAST" name="Regression Test" finished-at="2023-09-12T12:16:02 SAST" duration-ms="376">
+    <test started-at="2023-09-15T20:56:41 SAST" name="Default test" finished-at="2023-09-15T20:56:41 SAST" duration-ms="283">
       <class name="test.FacebookDemo">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.FacebookDemo@40a4337a]" started-at="2023-09-12T12:15:44 SAST" name="beforeSuite" finished-at="2023-09-12T12:16:02 SAST" duration-ms="17381" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.FacebookDemo@1f59a598]" started-at="2023-09-15T20:56:37 SAST" name="beforeSuite" finished-at="2023-09-15T20:56:41 SAST" duration-ms="3388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="loginTest()[pri:0, instance:test.FacebookDemo@40a4337a]" started-at="2023-09-12T12:16:02 SAST" name="loginTest" finished-at="2023-09-12T12:16:02 SAST" duration-ms="290" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:test.FacebookDemo@1f59a598]" started-at="2023-09-15T20:56:41 SAST" name="loginTest" finished-at="2023-09-15T20:56:41 SAST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="pageTitleValidation()[pri:0, instance:test.FacebookDemo@40a4337a]" started-at="2023-09-12T12:16:02 SAST" name="pageTitleValidation" finished-at="2023-09-12T12:16:02 SAST" duration-ms="21" status="PASS">
+        <test-method signature="pageTitleValidation()[pri:0, instance:test.FacebookDemo@1f59a598]" started-at="2023-09-15T20:56:41 SAST" name="pageTitleValidation" finished-at="2023-09-15T20:56:41 SAST" duration-ms="15" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Expected Result = Facebook – log in or sign up]]>
@@ -31,11 +31,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- pageTitleValidation -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.FacebookDemo@40a4337a]" started-at="2023-09-12T12:16:02 SAST" name="afterSuite" finished-at="2023-09-12T12:16:03 SAST" duration-ms="560" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.FacebookDemo@1f59a598]" started-at="2023-09-15T20:56:41 SAST" name="afterSuite" finished-at="2023-09-15T20:56:41 SAST" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- test.FacebookDemo -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Regression Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
