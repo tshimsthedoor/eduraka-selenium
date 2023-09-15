@@ -53,7 +53,7 @@ public class FacebookDemo {
 
 	@AfterSuite
 	public void afterSuite() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
