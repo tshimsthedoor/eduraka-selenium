@@ -33,7 +33,7 @@ public class FacebookDemo {
 	
 	@Test
 	public void pageTitleValidation() {
-		String expectedResult = "Facebook – log in or sign up";
+		String expectedResult = "Facebook â€“ log in or sign up";
 		String actualResult = driver.getTitle().toString();
 		
 		Reporter.log("Expected Result = " + expectedResult);
