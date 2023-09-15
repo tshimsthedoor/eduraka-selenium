@@ -41,8 +41,7 @@ public class FacebookDemo {
 		String actualResult = driver.getTitle().toString();
 		//String actualResult="Facebook";
 		
-		Reporter.log("Expected Result = " + expectedResult);
-		Reporter.log("Actual Result = " + actualResult);
+		
 		System.out.println(actualResult);		
 		//assertTrue(actualResult.equals(expectedResult), "Mistmatch in the page title.");
 	}
@@ -54,6 +53,10 @@ public class FacebookDemo {
 		driver.findElement(By.xpath("//button[@name='login']")).click();
 		String expectedResult = "Facebook";
 		String actualResult = driver.getTitle().toString();
+		
+		Reporter.log("Expected Result = " + expectedResult);
+		Reporter.log("Actual Result = " + actualResult);
+		
 		assertTrue(actualResult.equals(expectedResult), "Mistmatch in the page title.");
 	}
 	
