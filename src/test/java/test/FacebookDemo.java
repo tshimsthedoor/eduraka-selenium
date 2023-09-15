@@ -34,12 +34,12 @@ public class FacebookDemo {
 	@Test
 	public void pageTitleValidation() {
 		String expectedResult = "Facebook – log in or sign up";
-		String actualResult = driver.getTitle();
+		String actualResult = driver.getTitle().toString();
 		
 		Reporter.log("Expected Result = " + expectedResult);
 		Reporter.log("Actual Result = " + actualResult);
-		
-		//assertTrue(actualResult.equals(expectedResult), "Mistmatch in the page title.");
+		System.out.println(actualResult);		
+		assertTrue(actualResult.equals(expectedResult), "Mistmatch in the page title.");
 	}
 
 	@Test
@@ -53,7 +53,7 @@ public class FacebookDemo {
 
 	@AfterSuite
 	public void afterSuite() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

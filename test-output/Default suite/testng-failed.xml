@@ -8,7 +8,6 @@
           <include name="pageTitleValidation"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
-          <include name="loginTest"/>
         </methods>
       </class> <!-- test.FacebookDemo -->
     </classes>
