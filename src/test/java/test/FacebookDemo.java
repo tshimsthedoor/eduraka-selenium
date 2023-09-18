@@ -51,7 +51,7 @@ public class FacebookDemo {
 		driver.findElement(By.id("email")).sendKeys("tshimsthedor@yahoo.fr");
 		driver.findElement(By.id("pass")).sendKeys("thedwer");
 		driver.findElement(By.xpath("//button[@name='login']")).click();
-		String expectedResult = "Facebook";
+		String expectedResult = "Log in to Facebook";
 		String actualResult = driver.getTitle().toString();
 		
 		Reporter.log("Expected Result = " + expectedResult);
@@ -64,7 +64,7 @@ public class FacebookDemo {
 
 	@AfterSuite
 	public void afterSuite() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }
